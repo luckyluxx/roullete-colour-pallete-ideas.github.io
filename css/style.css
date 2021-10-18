@@ -185,7 +185,7 @@ main h1{
     font-size: 36pt;
 }
 main p.lorem{
-    width: 840px;
+    width: 72%;
     text-align: center;
 }
 main .welcome-text button.btn-discover{
@@ -288,6 +288,9 @@ main .btn-like{
     .nav{
         min-height: 20vh;
     }
+    main .overlay{
+        margin-top: 97vh;
+    }
 }
 /*      Viewport less than or equal to 800px        */
 
@@ -304,9 +307,20 @@ main .btn-like{
     .nav .collapse-toggle-container{
         display:initial;
     }
-
+    main .overlay{
+        margin-top: 89vh;
+    }
 }
 
+@media only screen and (min-width: 800px){
+    .nav{
+        max-height: 20vh;
+    }
+
+@media only screen and (min-width: 1022px){
+    .nav{
+        max-height: 12vh;
+    }
 /*------x----- RESPONSIVE WEB DESIGN -----x-----*/
 
 
