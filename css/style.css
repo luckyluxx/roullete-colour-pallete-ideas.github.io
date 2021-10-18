@@ -202,17 +202,6 @@ main button.btn-discover:hover{
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     color: #f4f4f4;
 }
-main .overlay{
-    position:absolute;
-    margin-top: 88vh;
-    top:0;
-    left:0;
-    right:0;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); /* Standard syntax (must be last) */
-    width:100%;
-    height:30vh;
-    z-index:1;  
-}
 
 /*---x------ welcome | section ------x---*/
 
@@ -289,9 +278,6 @@ main .btn-like{
     .nav{
         min-height: 20vh;
     }
-    main .overlay{
-        margin-top: 97vh;
-    }
 }
 /*      Viewport less than or equal to 800px        */
 
@@ -308,20 +294,18 @@ main .btn-like{
     .nav .collapse-toggle-container{
         display:initial;
     }
-    main .overlay{
-        margin-top: 89vh;
-    }
 }
 
 @media only screen and (min-width: 800px){
     .nav{
         max-height: 20vh;
     }
-
+}
 @media only screen and (min-width: 1022px){
     .nav{
         max-height: 12vh;
     }
+}
 /*------x----- RESPONSIVE WEB DESIGN -----x-----*/
 
 
