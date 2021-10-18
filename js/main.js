@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $nav = $('.nav');
-    $collapseButton = $('.collapse-toggle-container');
+    $collapseButton = $('.toggle-icon');
 
     $collapseButton.click(function(){
         $nav.toggleClass('collapse');

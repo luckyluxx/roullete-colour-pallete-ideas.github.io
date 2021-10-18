@@ -1,7 +1,5 @@
 /*font | google font*/
 @import url(../css/font.css);
-/*responsive*/
-@import url(../css/responsive.css);
 /*icon*/
 @import url(../css/all.css);
 
@@ -27,7 +25,6 @@ body{
     /* Gradient Color*/
     --sky-sunset: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 
-
 }
 button{
     cursor: pointer;
@@ -51,6 +48,13 @@ h1, h2, h3, h4 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+h1.section-titleoftheyear{
+    font-family: 'Mukta', sans-serif;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-top: 12vh;
 }
 
 /*====x====== GLOBAL ======x=====*/
@@ -161,6 +165,7 @@ main .welcome{
     background-size: cover;
     background-position: bottom;
     height: 102vh;
+    margin-bottom: 35vh;
 }
 main .welcome .welcome-text{
     display: flex;
@@ -213,14 +218,22 @@ main .overlay{
 
 /*---------- pallete of the year | section ----------*/
 
-
-
+main .title-content, main .palleteoftheyear{
+    margin: 0 2rem;
+}
+main .title-content h2.title{
+    font-family: 'Lora', serif;
+    float: right;
+}
 main .palleteoftheyear{
-    margin-top: 10vh;
+    margin-top: 8vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 8rem 6rem;
-    padding: 0 5rem;
+    gap: 4rem 1.5rem;
+}
+main .section-titleoftheyear{
+    grid-column: 1/-1 ;
+    margin: 0;
 }
 main .palletes-container{
     display: flex;
@@ -228,15 +241,13 @@ main .palletes-container{
     background-color: #7c7c7c;
     width: fit-content;
     align-items: center;
-    margin: 0 1rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
-
 main .palletes-bottom-section{
     background-color: #fff;
     width: 100%;
-    padding-left: 1rem;
-
+    padding-left: 1.2rem;
+    padding-right: .5rem;
 }
 main .palletes-bottom-section a{
     color: #1b1b1b;
@@ -272,15 +283,15 @@ main .btn-like{
 
 /*----------- RESPONSIVE WEB DESIGN ----------*/
 
-/*      Viewport less than or equal to 860px        */
-@media only screen and (max-width: 860px){
+/*      Viewport less than or equal to 1022px        */
+@media only screen and (max-width: 1022px){
     .nav{
-        min-height: 17vh;
+        min-height: 20vh;
     }
 }
-/*      Viewport less than or equal to 750px        */
+/*      Viewport less than or equal to 800px        */
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 800px){
     .nav{
         min-height: 12vh;
     }
@@ -295,22 +306,6 @@ main .btn-like{
     }
 
 }
-/*      Viewport more than or equal to 861px        */
-
-@media only screen and (min-width: 861px){
-
-    .nav{
-        height: initial;
-    }
-}/*Mengembalikan navbar height seperti semula*/
-/*      Viewport more than or equal to 750px        */
-
-@media only screen and (min-width: 751px){
-
-    .nav{
-        height: initial;
-    }
-}/*Mengembalikan navbar height seperti semula*/
 
 /*------x----- RESPONSIVE WEB DESIGN -----x-----*/
 
