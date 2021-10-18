@@ -161,11 +161,11 @@ main{
 /*--------- welcome | section ---------*/
 
 main .welcome{
-    background-image: url(../assets/bgbaru.jpg);
+    background-image: url(../assets/bgbarulagi.jpg);
     background-size: cover;
     background-position: bottom;
     height: 102vh;
-    margin-bottom: 35vh;
+    margin-bottom: 25vh;
 }
 main .welcome .welcome-text{
     display: flex;
@@ -223,6 +223,7 @@ main .title-content, main .palleteoftheyear{
 }
 main .title-content h2.title{
     font-family: 'Lora', serif;
+    font-size: large;
     float: right;
 }
 main .palleteoftheyear{
