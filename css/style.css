@@ -1,0 +1,325 @@
+/*font | google font*/
+@import url(../css/font.css);
+/*responsive*/
+@import url(../css/responsive.css);
+/*icon*/
+@import url(../css/all.css);
+
+html, body{
+    margin:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: #f0f0f0;
+}
+:root{
+    
+    /* Gradient Color*/
+    --accent1:rgb(217,210,233);
+    --accent2:rgb(255,242,204);
+    --accent3:rgb(147,196,125);
+    --main-color:rgb(255,229,153);
+    --main-color-bold:rgb(56,118,29);
+    --sub-type:#5d7d7d;
+    --thin-text:#4a5e4a;
+
+    /* Gradient Color*/
+    --sky-sunset: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+
+
+}
+button{
+    cursor: pointer;
+}
+
+/*=========== GLOBAL ===========*/
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/*====x====== GLOBAL ======x=====*/
+
+/*=========== NAV ===========*/
+
+.nav{
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    height: 0rem;
+    min-height: 11vh;
+    overflow: hidden;
+
+    position: sticky;
+    top: 0;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+/*------- collapse menu ------*/
+.nav .collapse-toggle-container{
+    position: absolute;
+    top: 0;
+    width: 91%;
+    display: none  ;
+    cursor: pointer;
+}
+.nav .collapse-toggle-container .toggle-icon{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.4rem 0 1.2rem 0;
+    color: var(--thin-text);
+}
+.nav .collapse-toggle-container .toggle-icon i{
+    font-size: 1.5rem;
+}
+
+/*------ collapseable | link with js -------*/
+.collapse{
+    height: 24rem;
+}
+/*--x--- collapseable | link with js ---x---*/
+
+/*----x-- collapse menu --x---*/
+
+.nav .nav-items{
+    display: flex;
+    margin: 0; 
+}
+
+.nav .nav-items .nav-link{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: var(--sub-type);
+
+    margin: 0 .3rem;
+
+    padding: 1.6rem 1rem;
+    position: relative;
+}
+/*--------- navigation active link -------*/
+.nav .nav-items .nav-link:hover{
+    border-bottom: 4px solid var(--accent1);
+    border-radius: 0 0 4px 4px;
+    font-weight: 600;
+    transition: 75ms;
+}
+.nav .nav-items .nav-link:active{
+    border-bottom-color: var(--main-color-bold);
+    font-weight: normal;
+    transition: 25ms;
+}
+/*---x----- navigation active link ---x---*/
+
+.nav .nav-brand a{
+    Font-family: 'Nunito', sans-serif;
+    font-size: 1.8rem;
+    color: var(--main-color-bold);
+    padding: 1rem 167px 1rem 0;
+    display: block;
+}
+
+.nav .nav-search{
+    margin-top: 1.2rem;
+}
+.nav .nav-search input{
+    border: 3px solid var(--sub-type);
+}
+.nav .nav-search .search-item{
+    color: var(--thin-text);
+    padding: .4rem 1.4rem;
+}
+/*======x===== NAV ======x=====*/
+
+/*=========== MAIN ============*/
+
+main{
+    background-color: #fff;
+}
+
+/*--------- welcome | section ---------*/
+
+main .welcome{
+    background-image: url(../assets/bgbaru.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 102vh;
+}
+main .welcome .welcome-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    color: #1b1b1b;
+    font-family: 'Source Sans Pro', sans-serif; 
+    align-items: center;
+}
+
+main h1{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    font-size: 36pt;
+}
+main p.lorem{
+    width: 840px;
+    text-align: center;
+}
+main .welcome-text button.btn-discover{
+    margin: 4rem;
+    background: var(--sky-sunset);
+    
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1rem;
+}
+main button.btn-discover:hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    color: #f4f4f4;
+}
+main .overlay{
+    position:absolute;
+    margin-top: 88vh;
+    top:0;
+    left:0;
+    right:0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)); /* Standard syntax (must be last) */
+    width:100%;
+    height:30vh;
+    z-index:1;  
+}
+
+/*---x------ welcome | section ------x---*/
+
+/*---------- pallete of the year | section ----------*/
+
+
+
+main .palleteoftheyear{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8rem 6rem;
+    padding: 0 5rem;
+}
+main .palletes-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #7c7c7c;
+    width: fit-content;
+    align-items: center;
+    margin: 0 1rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+main .palletes-bottom-section{
+    background-color: #fff;
+    width: 100%;
+    padding-left: 1rem;
+
+}
+main .palletes-bottom-section a{
+    color: #1b1b1b;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+main .palletes-brand{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+main .palletes-similar{
+    margin-top: 1rem;
+}
+main .palletes-metadata{
+    display: flex;
+    flex-direction: row ;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 0.4rem;
+    align-items: center;
+}
+main .btn-like{
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*---x------ pallete of the year | section ------x---*/
+
+
+/*=====x====== MAIN =====x======*/
+
+
+/*----------- RESPONSIVE WEB DESIGN ----------*/
+
+/*      Viewport less than or equal to 860px        */
+@media only screen and (max-width: 860px){
+    .nav{
+        min-height: 17vh;
+    }
+}
+/*      Viewport less than or equal to 750px        */
+
+@media only screen and (max-width: 750px){
+    .nav{
+        min-height: 12vh;
+    }
+    .nav .nav-menu .nav-brand{
+        margin-bottom: 1.2rem;
+    }
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .collapse-toggle-container{
+        display:initial;
+    }
+
+}
+/*      Viewport more than or equal to 861px        */
+
+@media only screen and (min-width: 861px){
+
+    .nav{
+        height: initial;
+    }
+}/*Mengembalikan navbar height seperti semula*/
+/*      Viewport more than or equal to 750px        */
+
+@media only screen and (min-width: 751px){
+
+    .nav{
+        height: initial;
+    }
+}/*Mengembalikan navbar height seperti semula*/
+
+/*------x----- RESPONSIVE WEB DESIGN -----x-----*/
+
+
+
+
+
+
+
+
+
+
