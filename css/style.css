@@ -86,6 +86,11 @@ h1.section-titleoftheyear{
     margin-top: 12vh;
 }
 
+.grid-def{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 3rem 2.2rem;
+}
 /*====x====== GLOBAL ======x=====*/
 
 /*=========== NAV ===========*/
@@ -100,6 +105,7 @@ h1.section-titleoftheyear{
 
     position: sticky;
     top: 0;
+    z-index: calc(10000*10000);
 }
 
 .nav .nav-menu{
@@ -313,6 +319,69 @@ main .btn-like{
 
 /*---x------ pallete of the year | section ------x---*/
 
+/*=======GENERATE.HTML=======*/
+/*Generate Color Scheme*/
+
+main#generate-main{
+    height: 85vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: relative;
+}
+main#generate-main .scheme-container{
+    height: 85vh;
+    width: 20%;
+}
+main#generate-main .scheme-container h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align:center;
+    padding: 75vh 0 0 0;
+    color: #fff;
+}
+main#generate-main .scheme-container h2.darktxt{
+    color: #1c1c1c;
+}
+main#generate-main .colorscheme .colorscheme-satu{
+    background-color: #50B2C0;
+}
+main#generate-main .colorscheme .colorscheme-dua{
+    background-color: #FEEFDD;
+}
+main#generate-main .colorscheme .colorscheme-tiga{
+    background-color: #FAAA8D;
+}
+main#generate-main .colorscheme .colorscheme-empat{
+    background-color: #FF4000;
+}
+main#generate-main .colorscheme .colorscheme-lima{
+    background-color: #201E1F;
+}
+main#generate-main .floatingmore{
+    position: absolute;
+    bottom: 15vh;
+    right: 46%;
+    min-width: 8%;
+}
+main#generate-main .floatingmore button{
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    background-color: #f2efecc4;
+    padding: 1rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+main#generate-main .floatingmore button:hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+}
+
+/*===X====GENERATE.HTML====X===*/
 
 /*=====x====== MAIN =====x======*/
 
@@ -409,66 +478,70 @@ footer .downtown{
         max-height: 12vh;
     }
 }
+
+/*=======GENERATE.HTML=======*/
+
+@media only screen and (max-width: 720px){
+    main#generate-main .scheme-container h2{
+    font-size: calc(100%);
+    }
+}
+/*===x====GENERATE.HTML====x===*/
+
 /*------x----- RESPONSIVE WEB DESIGN -----x-----*/
 
 
-/*Generate Color Scheme*/
 
-main#generate-main{
-    height: 85vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    border: none;
-    position: relative;
+main#latest-main .scheme-container{
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 2px solid #1c1c1c;
+    border-radius: 3px 3px 12px 12px;
+    min-width: 15%;
+    min-height: 180px;
+    overflow: hidden;
 }
-main#generate-main .scheme-container{
-    height: 85vh;
+main#latest-main .scheme-container .full{
+    height: 120px;
     width: 20%;
 }
-main#generate-main .scheme-container h2{
-    font-family: 'Source Sans Pro', sans-serif;
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align:center;
-    padding: 75vh 0 0 0;
-    color: #fff;
+main#latest-main .scheme-container .color-scheme-1{
+    background-color: #1a1144;
 }
-main#generate-main .scheme-container h2.darktxt{
-    color: #1c1c1c;
+main#latest-main .scheme-container .color-scheme-2{
+    background-color: #1a8d44;
 }
-main#generate-main .colorscheme .colorscheme-satu{
-    background-color: #50B2C0;
+main#latest-main .scheme-container .color-scheme-3{
+    background-color: #1a2c44;
 }
-main#generate-main .colorscheme .colorscheme-dua{
-    background-color: #FEEFDD;
+main#latest-main .scheme-container .color-scheme-4{
+    background-color: #1a3d3a;
 }
-main#generate-main .colorscheme .colorscheme-tiga{
-    background-color: #FAAA8D;
+main#latest-main .scheme-container .color-scheme-5{
+    background-color: #1a3d66;
 }
-main#generate-main .colorscheme .colorscheme-empat{
-    background-color: #FF4000;
+
+main#latest-main .scheme-container .scheme-metadata span.scheme-meta-name{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
-main#generate-main .colorscheme .colorscheme-lima{
-    background-color: #201E1F;
-}
-.floatingmore{
-    position: absolute;
-    bottom: 15vh;
-    right: 46%;
-    width: 8%;
-}
-.floatingmore button{
-    width: 100%;
-    border: none;
-    border-radius: 2rem;
-    background-color: #f2efecc4;
-    padding: 1rem;
-    font-family: 'Karla', sans-serif;
-    font-size: 1.1rem;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-.floatingmore button:hover{
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-    transform: scale(1.1);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
